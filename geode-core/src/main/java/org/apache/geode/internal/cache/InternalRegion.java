@@ -41,4 +41,6 @@ public interface InternalRegion<K, V> extends Region<K, V>, HasCachePerfStats {
 
   RegionEntry getRegionEntry(K key);
 
+  void addCacheServiceProfile(CacheServiceProfile profile);
+
 }
