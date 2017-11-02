@@ -874,7 +874,7 @@ public abstract class AbstractRegion implements Region, RegionAttributes, Attrib
 
   public void addAsyncEventQueueId(String asyncEventQueueId, boolean isInternal) {
     getAsyncEventQueueIds().add(asyncEventQueueId);
-    if(!isInternal) {
+    if (!isInternal) {
       getVisibleAsyncEventQueueIds().add(asyncEventQueueId);
     }
     setAllGatewaySenderIds();
